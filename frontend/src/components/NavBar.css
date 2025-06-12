@@ -1,0 +1,15 @@
+.nav-link {
+    transition: color 0.2s ease-in-out;
+}
+.nav-link:hover {
+    color: #BB86FC;
+}
+.register-button {
+    background-color: #BB86FC;
+    color: #121212;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+}
+.register-button:hover {
+    background-color: #A052E8;
+}

@@ -1,0 +1,9 @@
+.search-button {
+    background-color: #3F51B5;
+    color: #FFFFFF;
+    border-radius: 9999px;
+}
+.search-button:hover {
+    background-color: #303F9F;
+    cursor: pointer;
+}

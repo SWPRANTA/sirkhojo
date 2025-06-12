@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Global Leader Scholarship",
+        "university": "Cambridge University",
+        "location": "UK",
+        "field": "All Fields",
+        "description": "Full tuition coverage for outstanding international students demonstrating leadership potential.",
+        "deadline": "2023-10-15"
+    },
+    {
+        "title": "STEM Innovators Grant",
+        "organization": "Tech Future Foundation",
+        "location": "United States (Remote possible)",
+        "field": "Physics",
+        "description": "Funding for projects in Science, Technology, Engineering, and Mathematics.",
+        "deadline": "2023-11-30"
+    },
+    {
+        "title": "Arts & Humanities Fellowship",
+        "university": "Sorbonne University",
+        "location": "France",
+        "field": "Arts, Humanities",
+        "description": "Supports postgraduate research in various arts and humanities disciplines.",
+        "deadline": "2023-12-01"
+    }
+]

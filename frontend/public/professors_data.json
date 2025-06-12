@@ -1,0 +1,52 @@
+[
+    {
+        "id": "144JD",
+        "name": "Prof. John Doe",
+        "university": "Kyung Hee University",
+        "location": "Seoul, South Korea",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBC6ogs7kyQrvZ_OiKWf_1ReWqN9RWq9l5PmqvqocqGEE1xHuLiLcPis1UVns2BIvPwTIOeq5VCzORp-H56g2N-Cp_sONTA8TIxyoFLhDgVPH4WMEUNJTJK5R7KKC6R_80_FLIOta5Uyt3jO19JnprmAvBIaMZt2uBaNgZ4aT0HTcMGDNAOcu3SGOepLYHpIM-Db65rJS9O8FEGFOEZWkgogVD6vUARFXHE_xd6CoaIZXcMUDSC7z8LX2tsTO_nCEtWOhHAqyrNNRI",
+        "tags": [
+            { "text": "AI", "color": "purple-600" },
+            { "text": "ML", "color": "blue-500" },
+            { "text": "Image", "color": "green-500" },
+            { "text": "NN", "color": "red-500" }
+        ],
+        "bio": "Professor John Doe is a leading expert in Artificial Intelligence and Machine Learning."
+    },
+    {
+        "id": "145JS",
+        "name": "Prof. Jane Smith",
+        "university": "Stanford University",
+        "location": "Stanford, CA, USA",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyQCaHKzXmbo6reZj7VNNU1r8bJOxtGtFxug3NS4zEhpA8l6vHT_c2UNvRozX_CtktEYxGe64UrziRzfFEm0suUNpBq4S8ESwrKTeBptnPJYyRHkME9dvt_hOi4B_C1CgdGHxC9IW5PIWVgUvWrJGDyzeh-rSG18U-uDYgtgAkf7B1Wcl9a_6-11WXdiIypVqxKND5nOgfYiTdR19tEeU3_HuOGlqnvFoBrm1OO9YhG9_-yEVD6Laa7V8B4HmNewb--7HM-0O7vGY",
+        "tags": [
+            { "text": "BioTech", "color": "pink-500" },
+            { "text": "Genetics", "color": "indigo-500" }
+        ],
+        "bio": "Professor Jane Smith specializes in Biotechnology and Genetics."
+    },
+    {
+        "id": "146AC",
+        "name": "Prof. Alistair Chen",
+        "university": "University of Oxford",
+        "location": "Oxford, UK",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBS9rPGZfItuK5ejzffO75x2PalM3pTH8d7Fl-995Flkcz4cL5HO16UyCA-nSOhiBxNoskTbcWJC4KNN2DDN3sKVTPk3UDcdRNMqaHAMUdRhhC7hGvo7LQGAwYgsuiXR1GXbBEAUdf9gGhNY8f1FnYrwm3ow5ilUHIrh66WGiNMRXEHPA51dFtJlUtfWBqd5-2azcwFCNaY4HoBnvvTsGI8CUT2EdGgYTMkBEz-_RrAQqXlOb73iEq-Pw7FGWTVsOcE5KneLpc1gKM",
+        "tags": [
+            { "text": "Physics", "color": "yellow-500" },
+            { "text": "Quantum", "color": "gray-600" }
+        ],
+        "bio": "Professor Alistair Chen is an expert in Physics and Quantum Mechanics."
+    },
+    {
+        "id": "147PS",
+        "name": "Prof. Priya Sharma",
+        "university": "IIT Bombay",
+        "location": "Mumbai, India",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdt3XLXlxrXSzmdb4ePX3CxHbJcCS4BlKdU_KEvyU59K40sTdgRUabDrYkElSu_ZjP1tvVPXkPKnij5Cuyxbs3Yzg44xJ0NSEknpTeRNUddkETZSgZXuCMZ7E5wBpJarmQ3JQMQnNe9gLcO1wPknQVqmRLLIVQy9oDeLlnIPVimbNJx9cmm4sD3qgH_T2bVkGKUokDKSBsE85UzTzmG-ra8gHemSp2PHjzbJ6x0ZVmk_DuRmDC10WZbPI9BxL9QgB3ZufJxTgW4D4",
+        "tags": [
+            { "text": "Robotics", "color": "teal-500" },
+            { "text": "Automation", "color": "orange-500" }
+        ],
+        "bio": "Professor Priya Sharma focuses on Robotics and Automation."
+    }
+]
