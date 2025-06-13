@@ -1,18 +1,27 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import './NavBar.css';
+import { useProfessors } from "../contexts/ProfessorsContext";
 
 function NavBar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
     const navigate = useNavigate();
     const location = useLocation();
+    const { professors } = useProfessors(); // <-- get professors
 
     const toggleMobileMenu = (): void => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
     const handleNavClick = (path: string): void => {
-        navigate(path);
+        if (path === "/professor") {
+            // Navigate to the first professor's profile if available
+            if (professors.length > 0) {
+                navigate(`/professor/${professors[0].id}`);
+            }
+        } else {
+            navigate(path);
+        }
         setIsMobileMenuOpen(false);
     };
 
@@ -25,6 +34,13 @@ function NavBar() {
         { name: "Professor Profile", path: "/professor" },
     ];
 
+    // Helper to check if current path matches nav link (handles dynamic routes)
+    const isActive = (linkPath: string) => {
+        if (linkPath === "/") return location.pathname === "/";
+        if (linkPath === "/professor") return location.pathname.startsWith("/professor");
+        return location.pathname === linkPath;
+    };
+
     return (
         <nav className="fixed top-0 left-0 w-full z-50 border-b-[1px] border-[#333333] bg-[#1E1E1E] p-4 shadow-md">
             <div className="container mx-auto flex justify-between items-center">
@@ -34,7 +50,7 @@ function NavBar() {
                         <a
                             key={link.path}
                             className={`nav-link cursor-pointer text-gray-300 hover:text-white pb-1 transition-colors duration-200 ${
-                                location.pathname === link.path
+                                isActive(link.path)
                                     ? "border-b-2 border-indigo-500 text-white"
                                     : ""
                             }`}

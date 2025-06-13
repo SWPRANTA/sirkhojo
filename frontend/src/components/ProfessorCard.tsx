@@ -1,24 +1,6 @@
 import './ProfessorCard.css'
-interface Tag {
-    text: string;
-    color: string;
-}
-
-interface Professor {
-    id: string;
-    name: string;
-    university: string;
-    location: string;
-    image: string;
-    tags: Tag[];
-    bio: string;
-}
-
-
-interface ProfessorCardProps {
-    prof: Professor;
-    openProfessorModal: (prof: Professor) => void;
-}
+import type { Tag } from '../types';
+import type { ProfessorCardProps } from '../types';
 
 // Map tag names to Tailwind background color classes
 const tagBgColors: { [key: string]: string } = {

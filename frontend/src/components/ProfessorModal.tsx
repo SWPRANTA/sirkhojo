@@ -18,14 +18,14 @@ interface Professor {
 
 interface ProfessorModalProps {
   isOpen: boolean;
-  onClose: () => void; // Renamed to onClose for consistency
+  onClose: () => void;
   profData: Professor | null;
 }
 
 function ProfessorModal({ isOpen, onClose, profData }: ProfessorModalProps) {
   const navigate = useNavigate();
 
-  if (!isOpen || !profData) return null; // Don't render if not open or no profData
+  if (!isOpen || !profData) return null;
 
   return (
     <div className="modal" onClick={onClose}>
@@ -64,8 +64,7 @@ function ProfessorModal({ isOpen, onClose, profData }: ProfessorModalProps) {
             {profData.bio || "No bio available for this professor."}
           </p>
           <a
-            className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md text-sm inline-flex items-center"
-            href="#"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md text-sm inline-flex items-center cursor-pointer"
             onClick={() => {
               navigate(`/professor/${profData.id}`);
               onClose();

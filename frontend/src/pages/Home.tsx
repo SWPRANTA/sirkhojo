@@ -3,21 +3,7 @@ import 'material-icons/iconfont/material-icons.css';
 import ProfessorCard from '../components/ProfessorCard';
 import ProfessorModal from '../components/ProfessorModal';
 import { useProfessors } from '../contexts/ProfessorsContext';
-
-interface Tag {
-    text: string;
-    color: string;
-}
-
-interface Professor {
-    id: string;
-    name: string;
-    university: string;
-    location: string;
-    image: string;
-    tags: Tag[];
-    bio: string;
-}
+import type { Professor } from '../types';
 
 function Home() {
     const { professors, loading, error } = useProfessors();

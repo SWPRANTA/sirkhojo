@@ -7,3 +7,23 @@
 .search-button:hover {
     background-color: #303F9F;
 }
+
+.card {
+    background-color: #1E1E1E;
+    border-radius: 12px;
+    border: 1px solid #333333;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.details-button {
+    background-color: #424242;
+    color: #E0E0E0;
+    border-radius: 6px;
+}
+.details-button:hover {
+    background-color: #616161;
+}

@@ -1,25 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-interface Tag {
-    text: string;
-    color: string;
-}
-
-export interface Professor {
-    id: string;
-    name: string;
-    university: string;
-    location: string;
-    image: string;
-    tags: Tag[];
-    bio: string;
-}
-
-interface ProfessorsContextType {
-    professors: Professor[];
-    loading: boolean;
-    error: string | null;
-}
+import type{Professor, ProfessorsContextType} from '../types';
 
 const ProfessorsContext = createContext<ProfessorsContextType>({
     professors: [],

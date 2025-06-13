@@ -2,21 +2,7 @@ import { useState } from "react";
 import { useProfessors } from "../contexts/ProfessorsContext";
 import ProfessorModal from "../components/ProfessorModal";
 import ProfessorCard from "../components/ProfessorCard";
-
-interface Tag {
-    text: string;
-    color: string;
-}
-
-interface Professor {
-    id: string;
-    name: string;
-    university: string;
-    location: string;
-    image: string;
-    tags: Tag[];
-    bio: string;
-}
+import type { Professor } from "../types";
 
 function SearchProf() {
     const { professors, loading, error } = useProfessors();

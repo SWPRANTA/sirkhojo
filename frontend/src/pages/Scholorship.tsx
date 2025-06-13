@@ -1,15 +1,7 @@
 import { useEffect, useState } from "react"
 import './Scholorship.css'
+import type { ScholorshipType } from '../types'
 
-interface Scholorship {
-    title: string;
-    university?: string;
-    organization?: string;
-    location: string;
-    field: string;
-    description: string;
-    deadline: string;
-}
 
 
 function Scholorship() {
@@ -49,19 +41,19 @@ function Scholorship() {
                 {loading ? (
                     <div className="col-span-3 text-center text-gray-500">Loading scholarships...</div>
                 ) : (
-                    scholorships.map((scholorship: Scholorship, index: number) => (
-                        <div key={index} className="p-6 bg-white rounded-lg shadow-md">
+                    scholorships.map((scholorship: ScholorshipType, index: number) => (
+                        <div key={index} className="card p-6">
                             <div className="flex items-center mb-3">
-                                <span className={`material-icons text-3xl text-${index === 0 ? 'yellow' : index === 1 ? 'blue' : 'purple'}-500 mr-3`}>{index === 0 ? 'school' : index === 1 ? 'science' : 'palette'}</span>
+                                <span className="material-icons text-3xl">{index === 0 ? 'school' : index === 1 ? 'science' : 'palette'}</span>
                                 <h3 className="text-xl font-semibold">{scholorship.title}</h3>
                             </div>
-                            <p className="text-gray-600 text-sm mb-1"><span className="font-semibold">{scholorship.university ? 'University' : 'Institution'}:</span> {scholorship.university || scholorship.organization}</p>
-                            <p className="text-gray-600 text-sm mb-1"><span className="font-semibold">Location:</span> {scholorship.location}</p>
-                            <p className="text-gray-600 text-sm mb-3"><span className="font-semibold">Field:</span> {scholorship.field}</p>
-                            <p className="text-gray-500 text-sm mb-5">{scholorship.description}</p>
+                            <p className="text-gray-400 text-sm mb-1"><span className="font-semibold">{scholorship.university ? 'University' : 'Institution'}:</span> {scholorship.university || scholorship.organization}</p>
+                            <p className="text-gray-400 text-sm mb-1"><span className="font-semibold">Location:</span> {scholorship.location}</p>
+                            <p className="text-gray-400 text-sm mb-3"><span className="font-semibold">Field:</span> {scholorship.field}</p>
+                            <p className="text-gray-300 text-sm mb-5">{scholorship.description}</p>
                             <div className="flex justify-between items-center">
-                                <span className="text-sm text-green-500 font-semibold">Deadline: {scholorship.deadline}</span>
-                                <a href="#" className="py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md text-sm">Learn More</a>
+                                <span className="text-sm text-green-400 font-semibold">Deadline: {scholorship.deadline}</span>
+                                <a href="#" className="details-button py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md text-sm">Learn More</a>
                             </div>
                         </div>))
                 )}

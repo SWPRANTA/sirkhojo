@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import { ProfessorsProvider } from './contexts/ProfessorsContext'
 import SearchProf from './pages/SearchProf'
 import Scholorship from './pages/Scholorship'
+import ProfessorProfile from './pages/ProfessorProfile'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/searchprof" element={<SearchProf />} />
           <Route path='/scholorships' element={<Scholorship/>}/>
+          <Route path="/professor/:id" element={<ProfessorProfile/>} />
         </Routes>
         </div>
         <Footer />
