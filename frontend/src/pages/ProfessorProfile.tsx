@@ -28,7 +28,8 @@ export default function ProfessorProfile() {
  
 
   return (
-    <div className="page-content container mx-auto p-6">
+    <div className="page-content container mx-auto p-6 my-12">
+      <h1 className="text-4xl font-bold mb-6 text-center">Professor Profile</h1>
       <div className="bg-gray-800 p-8 rounded-xl shadow-2xl">
         <div className="flex flex-col md:flex-row items-start gap-8">
           {/* Left: Profile */}

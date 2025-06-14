@@ -44,7 +44,7 @@ function NavBar() {
     return (
         <nav className="fixed top-0 left-0 w-full z-50 border-b-[1px] border-[#333333] bg-[#1E1E1E] p-4 shadow-md">
             <div className="container mx-auto flex justify-between items-center">
-                <a className="text-2xl font-bold" href="#" onClick={() => handleNavClick('/')}>SirKhojo</a>
+                <a className="text-2xl font-bold" href="#" onClick={() => handleNavClick('/')}>Sir Khojo</a>
                 <div className="hidden md:flex space-x-6 items-center">
                     {navLinks.map(link => (
                         <a

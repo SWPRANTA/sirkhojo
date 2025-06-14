@@ -7,6 +7,7 @@ import { ProfessorsProvider } from './contexts/ProfessorsContext'
 import SearchProf from './pages/SearchProf'
 import Scholorship from './pages/Scholorship'
 import ProfessorProfile from './pages/ProfessorProfile'
+import AboutUs from './pages/AboutUs'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/searchprof" element={<SearchProf />} />
           <Route path='/scholorships' element={<Scholorship/>}/>
           <Route path="/professor/:id" element={<ProfessorProfile/>} />
+          <Route path="/about" element={<AboutUs/>}/>
         </Routes>
         </div>
         <Footer />
